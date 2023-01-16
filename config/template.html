@@ -1,0 +1,317 @@
+<html>
+<head>
+<style>
+/*THIS PUT THE PAPER IN LANDSCAPE MODE*/
+    @page{
+        size: 11in landscape;
+        margin: 10px;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    /*THIS IS THE TOP LEFT HAND CORNER OF THE INFORMATION*/
+    .maintenance{
+        font-size:15pt;
+        color:#000000;
+        text-align:left;
+        padding: 0px;
+        border: none;
+        margin: none;
+    }
+    .company{
+        font-size:15pt;
+        color:#000000;
+        text-align:left;
+        padding: 5px;
+        border: none;
+        margin: none;
+    }
+    .type{
+        font-size:8pt;
+        color:#000000;
+        text-align:left;
+        padding: 0px;
+        border: none;
+        margin: none;
+    }
+    .rate{
+        font-size:8pt;
+        color:#000000;
+        text-align:left;
+        padding: 0px;
+        border: none;
+        margin: none;
+    }
+    .rdate{
+        font-size:8pt;
+        color:#000000;
+        text-align:left;
+        padding: 5px 0px 40px 0px;
+        border: none;
+        margin: none;
+    }
+    .total{
+        font-size:12pt;
+        color:#1e90ff;
+        text-align:left;
+        padding: 0px 0px 20px 0px;
+        border: none;
+        margin: none;
+    }
+    /* FIRST ROW WITH BORDER ON TOP AND BOTTOM*/
+    .purchase_date {
+        text-align: left;
+        font-size: 9pt;
+        border-top: 1px solid black;
+        border-bottom: 2px solid black;
+        padding-top: 2px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 1px;
+        margin: none;
+        width: 15%;
+    }
+    .po_number {
+        text-align: left;
+        font-size: 9pt;
+        border-top: 1px solid black;
+        border-bottom: 2px solid black;
+        padding-top: 2px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 1px;
+        margin: none;
+        width: 15%;
+    }
+    .description {
+
+        text-align: center;
+        font-size: 9pt;
+        border-top: 1px solid black;
+        border-bottom: 2px solid black;
+        padding-top: 2px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 1px;
+        margin: none;
+        width: 40%;
+    }
+    .purchase_price {
+        text-align: right;
+        font-size: 9pt;
+        border-top: 1px solid black;
+        border-bottom: 2px solid black;
+        padding-top: 2px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 1px;
+        margin: none;
+        width: 10%;
+    }
+    .quantity {
+        text-align: center;
+        font-size: 9pt;
+        border-top: 1px solid black;
+        border-bottom: 2px solid black;
+        padding-top: 2px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 1px;
+        margin: none;
+        width: 5%;
+    }
+    .percent_price {
+        text-align: right;
+        font-size: 9pt;
+        border-top: 1px solid black;
+        border-bottom: 2px solid black;
+        padding-top: 2px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 1px;
+        margin: none;
+        width: 15%;
+    }
+
+    /*THIS IS THE DATA TABLE WHERE THE INFORMATION GETS INSERTED*/
+    .purchase_date1 {
+        text-align:left;
+        font-size: 8pt;
+        margin-top: 1px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        border: none;
+        padding: 1px;
+        width: 15%;
+    }
+    .po_number1 {
+        text-align:left;
+        font-size: 8pt;
+        margin-top: 1px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        border: none;
+        padding: 1px;
+        width: 15%;
+    }
+    .description1 {
+        text-align:left;
+        font-size: 8pt;
+        margin-top: 1px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        border: none;
+        padding: 3px;
+        width: 40%;
+
+    }
+    .purchase_price1 {
+        text-align: right;
+        font-size: 8pt;
+        margin-top: 1px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        border: none;
+        padding: 1px;
+        width: 10%;
+
+    }
+    .quantity1 {
+        text-align: center;
+        font-size: 8pt;
+        margin-top: 1px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        border: none;
+        padding: 1px;
+        width: 5%;
+    }
+    .percent_price1 {
+        text-align:right;
+        font-size: 8pt;
+        margin-top: 1px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        border: none;
+        padding: 1px;
+        width: 15%;
+
+    }
+    .total_amount{
+        font-size: 12pt;
+        color:#1e90ff;
+        text-align: right;
+        margin-right: 80px;
+}
+    img{
+        text-align: right;
+    }
+</style>
+</head>
+<body>
+
+<img src = "{{opti_logo}}"/>
+<h1 class="maintenance">Maintenance Statement for:</h1>
+<h1 class="company"> {{name}}</h1>
+<h5 class="type">Statement Type: {{renewal_period}}</h5>
+<!--<h5 class="rate">Maintenance Rate: {{rate:.2f}}% </h5>-->
+<h5 class="rdate">Renewal Date: {{renewal_month}} 1, {{year}}</h5>
+<h4 class="discount">{{discount}}</h4>
+<h4 class="total">Due: ${{dis_total:,.2f}}</h4>
+
+
+
+<!--<span style="font-size:20pt;color:#4287f5;font-weight:bold;text-align:left">OPTIMATION</span>-->
+<!--<h3 style="font-size:12pt ">700 NE. R D Mize Road,</h3>-->
+<!--<h3 style="font-size:12pt ">Unit 101, Blue Springs, MO, 64014</h3>-->
+
+<table>
+ <tr>
+    <th class="description" >
+        Product</th>
+     <th class="po_number">
+        PO Number </th>
+     <th class="purchase_date">
+        Purchase Order Date </th>
+    <th class="purchase_price">
+        Price</th>
+     <th class="quantity">
+        Qty</th>
+     <th class="percent_price">
+        Maintenance Cost at {{rate:.2f}}%</th>
+ </tr>
+
+</table>
+
+{%start install_list loop}}
+<table>
+    <th class="description1" >
+        {{description}}</th>
+    <th class="po_number1">
+        {{po_number}}</th>
+    <th class="purchase_date1">
+        {{date_purchased}}</th>
+    <th class="purchase_price1">
+        {{cost}}</th>
+        <th class="quantity1" >
+        {{quantity}}</th>
+    <th class="percent_price1">
+        {{percent}}</th>
+</table>
+{%end install_list loop}}
+
+<table>
+ <tr>
+    <th class="description" >
+        Product</th>
+     <th class="purchase_date">
+        Purchase Order Date </th>
+    <th class="purchase_price">
+        Price</th>
+     <th class="quantity">
+        Months</th>
+     <th class="percent_price">
+        Total</th>
+ </tr>
+</table>
+
+{%start service_install loop}}
+<table>
+    <th class="description1" >
+        {{description}}</th>
+<!--    <th class="po_number1">-->
+<!--        {{po_number}}</th>-->
+    <th class="purchase_date1">
+        {{date_purchased}}</th>
+    <th class="purchase_price1">
+        ${{price}}</th>
+        <th class="quantity1" >
+        {{quantity}}</th>
+<!--    <th class="percent_price1">-->
+<!--        {{percent}}</th>-->
+</table>
+{%end service_install loop}}
+
+<p class="total_amount">Total: = ${{total:,.2f}} </p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
