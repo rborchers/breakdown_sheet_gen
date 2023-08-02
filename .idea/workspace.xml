@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b2060858-3fee-48b8-8608-dc9cb096250b" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Customer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZohoCRM.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZohoCRM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/config/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/zcrm_oauthtokens.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/config/zcrm_oauthtokens.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +215,7 @@
       <workItem from="1688575896982" duration="27000" />
       <workItem from="1689105048959" duration="1776000" />
       <workItem from="1689625453169" duration="1828000" />
-      <workItem from="1690916714050" duration="1839000" />
+      <workItem from="1690916714050" duration="4123000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1673889489301</created>
@@ -237,7 +231,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673889615778</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1690990750979</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690990750979</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update">
+      <created>1690992993171</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690992993171</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,12 +368,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ZohoCRM.py</url>
-          <line>89</line>
+          <line>88</line>
           <option name="timeStamp" value="190" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ZohoCRM.py</url>
-          <line>91</line>
+          <line>90</line>
           <option name="timeStamp" value="193" />
         </line-breakpoint>
       </breakpoints>

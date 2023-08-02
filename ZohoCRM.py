@@ -86,12 +86,11 @@ class ZohoCRM:
                 # INSTALLATION DATA GATHERING
                 for install in resp.data:
                     cust_obj.install_list.append(install.field_data)
-
             except zcrmsdk.ZCRMException as ex:
                 pass
             try:
                 resp2 = module_ins2.search_records_by_criteria(f'((Account:equals:{fixed_name}))')
-
+                # SERVICE INSTALL DATA GATHERING
                 for service_install in resp2.data:
                     cust_obj.service_install.append(service_install.field_data)
             except zcrmsdk.ZCRMException as ex:
@@ -124,25 +123,3 @@ def resource_path(relative_path):
         base_path = os.path.abspath(".")
 
     return os.path.join(base_path, relative_path)
-
-
-
-
-
-
-
-
-
-
-
-  # except zcrmsdk.ZCRMException as ex:
-            #     cust_obj.valid = False
-            #     errored_customer.append(cust_obj)
-            #     # SERVICE INSTALLS DATA GATHERING
-            # try:
-            #     resp2 = module_ins2.search_records_by_criteria(f'((Account:equals:{fixed_name}))')
-            #     cust_obj.valid = True
-            #     for service_install in resp2.data:
-            #         cust_obj.service_install.append(service_install.field_data)
-            #
-            #     valid_customer.append(cust_obj)
