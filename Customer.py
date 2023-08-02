@@ -20,20 +20,24 @@ class Customer:
         except KeyError:
             self.renewal_period = None
         try:
-                self.discount = customer_info['Discount']
+            self.discount = customer_info['Discount']
         except KeyError:
-                self.discount= 0.0
+            self.discount= 0.0
         try:
             self.renewal_month = customer_info['Renewal_Month']
         except KeyError:
             self.renewal_month = None
-
+    #IF RATE DOES NOT EXIST WE SET TO 0 OTHERWISE MAINTENANCE
+        if self.rate is None:
+            self.rate = 0.0
+        else:
+            self.rate = self.rate
         return
 
-    def create_pdf(self, folder=None, date=None, type=None, zoho=None, list_price=None):
+    def create_pdf(self, folder=None, date=None, type=None, zoho=None, list_price=None, service_list=None):
         year = date[:4]
-        total = 0
         total: int = 0
+        service_total: int = 0
         self.install_list=sorted(self.install_list,key=lambda x: x['Date_Purchased'])
         p = self.rate
         d = self.discount
@@ -51,6 +55,8 @@ class Customer:
         html.data.rate = self.rate * 100
         html.data.renewal_month = self.renewal_month
         html.data.renewal_period = self.renewal_period
+
+
         if a == 'Quarterly':
             b = 4
         elif a == 'Semi-Annually':
@@ -61,26 +67,17 @@ class Customer:
             html.data.discount = 'Corporate Discount: ' + str(self.discount) + '%'
         else:
             html.data.discount = " "
+#        if self.service_install
 
 #   ADD SERVICE INSTALLS TO THE BOTTOM OF THE PDF
         for s in self.service_install:
             install_ob = Opti_HTML_Class.DataObject()
-            try:
-                 if list_price is False:
-                    install_ob.price2 = s['Unit_Price']
-                    price2 = install_ob.price
-                 else:
-                    price2 = zoho.product_list.get_price(s['Item_Code1'])
-                    install_ob.price = price2
-            except KeyError:
-                install_ob.price = 0
-                price2 = 0
             # IGNORING MISSING ITEM CODES NEEDS SOME LOVE FOR FUTURE
             install_ob.date_purchased = '-'
             install_ob.description = '-'
             install_ob.po_number = '-'
             install_ob.cost = '-'
-            install_ob.quantity = '-'
+            install_ob.quantity = 12
             try:
                 install_ob.date_purchased = s['Date_Purchased']
             except KeyError:
@@ -97,14 +94,36 @@ class Customer:
                 install_ob.price = s['Unit_Price']
             except KeyError:
                 pass
-            if s['Inactive'] is True:
-                price2 = 0
-                install_ob.price = price2
-                install_ob.percent = 'N/A'
-            else:
-                install_ob.price = price2
+            try:
+                if service_list is False:
+                    install_ob.price = 0
+                    price2 = install_ob.price
+                    install_ob.date_purchased = " "
+                    install_ob.description = " "
+                    install_ob.quantity = 1
+                    install_ob.percent = " "
+                    install_ob.cost = 0
+                else:
+                    price2 = zoho.product_list.get_price(s['Item_Code1'])
+                    install_ob.price = int(price2)
+            except KeyError:
+                pass
 
-            total += price2
+            try:
+                if s['Inactive'] is True:
+                    price2 = 0
+                    install_ob.price = price2
+                    install_ob.percent = 'N/A'
+                    install_ob.quantity = 1
+                    install_ob.cost = 0
+                else:
+                    install_ob.price = price2
+            except KeyError:
+                pass
+
+            cost = price2 * install_ob.quantity
+            service_total += cost
+            install_ob.cost= cost
             html.data.service_install.append(install_ob)
 
         for i in self.install_list:
@@ -156,8 +175,8 @@ class Customer:
                 install_ob.date_purchased = ' '
             html.data.install_list.append(install_ob)
 
-        html.data.total = total
-        html.data.dis_total = total - ((d / 100) * total)
+        html.data.total = total + service_total
+        html.data.dis_total = (total / b - ((d / 100) * total)) + service_total
         html.process_template()
         # html.dump_to_file(folder.joinpath("opti_test.html"))
         html.dump_to_pdf(folder.joinpath(f"{self.company_name}{' '}{year}.pdf"))

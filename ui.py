@@ -39,6 +39,7 @@ def folder_build(loc, z, valid, errored):
         # [sg.InputCombo(['Quarterly', 'Annually'], key='type', size=(20, 3))],
         [sg.InputText('Year', key='date')],
         [sg.Checkbox('List Price', default=True , key='list_price')],
+        [sg.Checkbox('Service List', default=True, key='service_list')],
         [sg.Button('Exit'), sg.ReadButton('Create PDF')],
         [sg.Text('Accounts Selected:')]
     ]

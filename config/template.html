@@ -212,6 +212,11 @@
     img{
         text-align: right;
     }
+    .service_table{
+        font: 12pt;
+        color:#1e90ff;
+        padding-top: 50px;
+    }
 </style>
 </head>
 <body>
@@ -230,7 +235,7 @@
 <!--<span style="font-size:20pt;color:#4287f5;font-weight:bold;text-align:left">OPTIMATION</span>-->
 <!--<h3 style="font-size:12pt ">700 NE. R D Mize Road,</h3>-->
 <!--<h3 style="font-size:12pt ">Unit 101, Blue Springs, MO, 64014</h3>-->
-
+<h4 class="service_table">MAINTENANCE ITEMS</h4>
 <table>
  <tr>
     <th class="description" >
@@ -266,13 +271,16 @@
 </table>
 {%end install_list loop}}
 
+<h4 class="service_table">SERVICE ITEMS</h4>
 <table>
  <tr>
-    <th class="description" >
+     <th class="description" >
         Product</th>
+     <th class="po_number">
+          </th>
      <th class="purchase_date">
         Purchase Order Date </th>
-    <th class="purchase_price">
+     <th class="purchase_price">
         Price</th>
      <th class="quantity">
         Months</th>
@@ -285,18 +293,55 @@
 <table>
     <th class="description1" >
         {{description}}</th>
-<!--    <th class="po_number1">-->
-<!--        {{po_number}}</th>-->
+    <th class="po_number1">
+          </th>
     <th class="purchase_date1">
         {{date_purchased}}</th>
     <th class="purchase_price1">
         ${{price}}</th>
         <th class="quantity1" >
         {{quantity}}</th>
-<!--    <th class="percent_price1">-->
-<!--        {{percent}}</th>-->
+    <th class="percent_price1">
+        ${{cost}}</th>
+    </th>
 </table>
 {%end service_install loop}}
+
+<!--<h4 class="non_main_table">NON_MAINTENANCE ITEMS</h4>-->
+<!--<table>-->
+<!-- <tr>-->
+<!--    <th class="description" >-->
+<!--        Product</th>-->
+<!--     <th class="po_number">-->
+<!--        PO Number </th>-->
+<!--     <th class="purchase_date">-->
+<!--        Purchase Order Date </th>-->
+<!--    <th class="purchase_price">-->
+<!--        Price</th>-->
+<!--     <th class="quantity">-->
+<!--        Qty</th>-->
+<!--     <th class="percent_price">-->
+<!-- </tr>-->
+
+<!--</table>-->
+
+<!--{%start non_main_list loop}}-->
+<!--<table>-->
+<!--    <th class="description1" >-->
+<!--        {{description}}</th>-->
+<!--    <th class="po_number1">-->
+<!--        {{po_number}}</th>-->
+<!--    <th class="purchase_date1">-->
+<!--        {{date_purchased}}</th>-->
+<!--    <th class="purchase_price1">-->
+<!--        {{cost}}</th>-->
+<!--        <th class="quantity1" >-->
+<!--        {{quantity}}</th>-->
+<!--    <th class="percent_price1">-->
+<!--        {{percent}}</th>-->
+<!--</table>-->
+<!--{%end non_main_list loop}}-->
+
 
 <p class="total_amount">Total: = ${{total:,.2f}} </p>
 

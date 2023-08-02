@@ -37,5 +37,5 @@ event, values = ui.folder_read(loc, z, valid, errored)
 if event == 'Exit':
     sys.exit(0)
 for customer in valid:
-    customer.create_pdf(date=values['date'], folder=values['folder'], zoho=z, list_price=values['list_price'])
+    customer.create_pdf(date=values['date'], folder=values['folder'], zoho=z, list_price=values['list_price'], service_list= values['service_list'])
 ii = 1

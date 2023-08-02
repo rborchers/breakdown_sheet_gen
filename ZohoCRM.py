@@ -53,6 +53,7 @@ class ZohoCRM:
             ret.append(record_ins.field_data)
         self.account_info = ret
         self.customer_list = []
+
         for cust in ret:
             try:
                 rate = (cust['Maintenance_Rate1'])/100.0
@@ -74,34 +75,33 @@ class ZohoCRM:
     def verify_customer(self, list):
         valid_customer = []
         errored_customer = []
-        ret = []
-
         for customer in list:
             cust_obj = self.find_customer(customer)
             module_ins = zcrmsdk.ZCRMModule.get_instance('Installations')
             module_ins2 = zcrmsdk.ZCRMModule.get_instance('Service_Installs')
             fixed_name = customer.replace('(', '\(').replace(')', '\)')
+            cust_obj.valid = True
             try:
                 resp = module_ins.search_records_by_criteria(f'((Account:equals:{fixed_name}))')
-                resp2 = module_ins2.search_records_by_criteria(f'((Account:equals:{fixed_name}))')
-                cust_obj.valid = True
-        # installations data gathering
+                # INSTALLATION DATA GATHERING
                 for install in resp.data:
                     cust_obj.install_list.append(install.field_data)
-                # [cust_obj.install_list.append(service_install.field_data) for service_install in resp2.data]
+
+            except zcrmsdk.ZCRMException as ex:
+                pass
+            try:
+                resp2 = module_ins2.search_records_by_criteria(f'((Account:equals:{fixed_name}))')
+
                 for service_install in resp2.data:
                     cust_obj.service_install.append(service_install.field_data)
-
-                valid_customer.append(cust_obj)
             except zcrmsdk.ZCRMException as ex:
-                cust_obj.valid = False
-                errored_customer.append(cust_obj)
-
-
-
+                pass
+            if not cust_obj.install_list and cust_obj.service_install:
+               cust_obj.valid = False
+               errored_customer.append(cust_obj)
+            else:
+                valid_customer.append(cust_obj)
         return valid_customer, errored_customer
-
-
 # CREATES THE LIST OF ACCOUNTS
     def get_name_list(self):
         ret = []
@@ -109,10 +109,6 @@ class ZohoCRM:
             ret.append(c.company_name)
             ret.sort()
         return ret
-
-# GET SERVICE INSTALL LIST
-#
-
 # IF THE NAME CHECK MATCHES THE ONE IN ZOHO
     def find_customer(self, name):
         for c in self.customer_list:
@@ -128,3 +124,25 @@ def resource_path(relative_path):
         base_path = os.path.abspath(".")
 
     return os.path.join(base_path, relative_path)
+
+
+
+
+
+
+
+
+
+
+
+  # except zcrmsdk.ZCRMException as ex:
+            #     cust_obj.valid = False
+            #     errored_customer.append(cust_obj)
+            #     # SERVICE INSTALLS DATA GATHERING
+            # try:
+            #     resp2 = module_ins2.search_records_by_criteria(f'((Account:equals:{fixed_name}))')
+            #     cust_obj.valid = True
+            #     for service_install in resp2.data:
+            #         cust_obj.service_install.append(service_install.field_data)
+            #
+            #     valid_customer.append(cust_obj)

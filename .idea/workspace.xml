@@ -2,32 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2060858-3fee-48b8-8608-dc9cb096250b" name="Default Changelist" comment="update">
-      <changelist_data name="Reese" email="" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Opti_HTML_Class.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ZohoCRM.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/autopytoexe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/Opti.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/zcrm_oauthtokens.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/installations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/.idea/testing.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Customer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZohoCRM.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZohoCRM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/config/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/zcrm_oauthtokens.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/config/zcrm_oauthtokens.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +18,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="U-OPTINEST\rborchers &lt;rborchers@opti-66.optinest.local&gt;" />
         <option value="Reese" />
       </list>
     </option>
@@ -64,11 +46,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/Zoho_projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rborchers\GitHub\pythonProject\config" />
       <recent name="C:\Users\rborchers\GitHub\pythonProject" />
     </key>
   </component>
@@ -208,8 +191,53 @@
       <workItem from="1672755237784" duration="38748000" />
       <workItem from="1673017635983" duration="25687000" />
       <workItem from="1673637099081" duration="714000" />
-      <workItem from="1673879614597" duration="1818000" />
+      <workItem from="1673879614597" duration="21073000" />
+      <workItem from="1674487221547" duration="22775000" />
+      <workItem from="1675088777054" duration="8789000" />
+      <workItem from="1675703144570" duration="1001000" />
+      <workItem from="1676573518748" duration="164000" />
+      <workItem from="1676582026288" duration="1102000" />
+      <workItem from="1676914540378" duration="1190000" />
+      <workItem from="1677516149367" duration="601000" />
+      <workItem from="1677604210770" duration="1197000" />
+      <workItem from="1678207003306" duration="6678000" />
+      <workItem from="1678308282053" duration="2026000" />
+      <workItem from="1678473697706" duration="3248000" />
+      <workItem from="1678801034078" duration="11570000" />
+      <workItem from="1679324129968" duration="8116000" />
+      <workItem from="1679930120303" duration="765000" />
+      <workItem from="1680182569141" duration="3801000" />
+      <workItem from="1680551315070" duration="3147000" />
+      <workItem from="1681159431139" duration="1194000" />
+      <workItem from="1681918374960" duration="1209000" />
+      <workItem from="1682448482423" duration="288000" />
+      <workItem from="1683828341707" duration="606000" />
+      <workItem from="1684244243125" duration="4605000" />
+      <workItem from="1684763274944" duration="2664000" />
+      <workItem from="1685978592452" duration="18558000" />
+      <workItem from="1686591094421" duration="5717000" />
+      <workItem from="1687882882143" duration="1582000" />
+      <workItem from="1688398882493" duration="3084000" />
+      <workItem from="1688575896982" duration="27000" />
+      <workItem from="1689105048959" duration="1776000" />
+      <workItem from="1689625453169" duration="1828000" />
+      <workItem from="1690916714050" duration="1839000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1673889489301</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673889489301</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update">
+      <created>1673889615778</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673889615778</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,11 +269,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ui.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/installations.py</url>
           <line>4</line>
           <option name="timeStamp" value="67" />
@@ -262,7 +285,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Customer.py</url>
-          <line>164</line>
+          <line>174</line>
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -272,113 +295,78 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Customer.py</url>
-          <line>37</line>
+          <line>41</line>
           <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Customer.py</url>
-          <line>50</line>
+          <line>54</line>
           <option name="timeStamp" value="125" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Customer.py</url>
-          <line>49</line>
+          <line>53</line>
           <option name="timeStamp" value="126" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Customer.py</url>
-          <line>116</line>
-          <option name="timeStamp" value="127" />
+          <line>94</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Customer.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Customer.py</url>
           <line>72</line>
-          <option name="timeStamp" value="128" />
+          <option name="timeStamp" value="159" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Customer.py</url>
-          <line>67</line>
-          <option name="timeStamp" value="131" />
+          <line>123</line>
+          <option name="timeStamp" value="165" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ZohoCRM.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="135" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ZohoCRM.py</url>
-          <line>85</line>
-          <option name="timeStamp" value="136" />
+          <url>file://$PROJECT_DIR$/ui.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="169" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Customer.py</url>
-          <line>69</line>
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Customer.py</url>
-          <line>68</line>
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Customer.py</url>
-          <line>73</line>
-          <option name="timeStamp" value="141" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Customer.py</url>
-          <line>98</line>
-          <option name="timeStamp" value="142" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ui.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="143" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ui.py</url>
-          <line>46</line>
-          <option name="timeStamp" value="144" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ui.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="145" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ui.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="146" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ui.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ZohoCRM.py</url>
-          <line>95</line>
-          <option name="timeStamp" value="148" />
+          <line>125</line>
+          <option name="timeStamp" value="170" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ZohoCRM.py</url>
           <line>84</line>
-          <option name="timeStamp" value="150" />
+          <option name="timeStamp" value="175" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ZohoCRM.py</url>
-          <line>86</line>
-          <option name="timeStamp" value="151" />
+          <line>77</line>
+          <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ZohoCRM.py</url>
-          <line>80</line>
-          <option name="timeStamp" value="152" />
+          <line>79</line>
+          <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ZohoCRM.py</url>
-          <line>81</line>
-          <option name="timeStamp" value="153" />
+          <line>89</line>
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ZohoCRM.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="193" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -391,7 +379,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1673889271615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1690990569266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testing$main.coverage" NAME="main Coverage Results" MODIFIED="1610739427676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
