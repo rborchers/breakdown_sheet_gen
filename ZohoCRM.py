@@ -95,6 +95,7 @@ class ZohoCRM:
                     cust_obj.service_install.append(service_install.field_data)
             except zcrmsdk.ZCRMException as ex:
                 pass
+            # IF SERV_INST OR INSTALL DONT EXIST DOESNT ERROR OUT
             if not cust_obj.install_list and cust_obj.service_install:
                cust_obj.valid = False
                errored_customer.append(cust_obj)
