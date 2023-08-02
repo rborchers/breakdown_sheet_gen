@@ -67,17 +67,3 @@ def folder_read(loc, z, valid, errored):
             break
     del window
     return event, values
-
-# def install_list_build(list):
-#         # GRABS ONLY THE ACTIVE ACCOUNTS
-#     col = []
-#     for company in list.verify_customer():
-#         col.apppend([sg.Text(company)])
-#         layout = [
-#             [sg.Column(col, size=(200, 300), scrollable=True)],
-#             [sg.Cancel('Exit'), sg.ReadButton('Next')]]
-#         window = sg.Window('OPTIMATION', element_justification='c', grab_anywhere=True).Layout(layout)
-#         return window
-# def install_list_read(list):
-#     window = install_list_build(list)
-#     return window
